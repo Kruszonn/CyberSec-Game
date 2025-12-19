@@ -69,7 +69,7 @@ In dialogue JSON (`data/dialogues/*.json`), `portrait` can be:
 - A simple frame animation:
   - `{ "type": "frames", "fps": 8, "frames": ["a.png", "b.png"] }`
 
-## Default sprite paths (used by the generated dev maps)
+## Default sprite paths
 
 - Player: `assets/sprites/player.png`
 - NPCs: `assets/sprites/npc.png` (fallback)
@@ -82,7 +82,4 @@ In dialogue JSON (`data/dialogues/*.json`), `portrait` can be:
 - House sprites: `assets/tiles/house_a.png`, `assets/tiles/house_b.png`
 - Interior background: `assets/tiles/house_1_bg.png`
 
-## Next steps
-- Export your city from Tiled to `data/maps/city.json`.
-- Create interior maps like `data/maps/house_1.json` and connect them via `Portals`.
-- Add your sprites/portraits under `assets/` and update dialogue JSON to point at them.
+## Next step
