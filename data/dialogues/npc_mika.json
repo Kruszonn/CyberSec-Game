@@ -1,0 +1,112 @@
+
+{
+  "npc_id": "mika",
+  "start_node": "intro",
+  "nodes": 
+  {
+    "intro": 
+    {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_neutral.png",
+      "text": "Hej! Szybki test bezpieczeństwa: jeśli strona poprosi o hasło i kod SMS, o czym powinieneś pomyśleć?a",
+      "choices": [
+        { "label": "To może być znak phishingu (AiTM).", "next": "good", "trust_delta": 1 },
+        { "label": "To normalne – po prostu wpiszę wszystko szybko.", "next": "bad", "trust_delta": -1 },
+        { "label": "Wolałbym porozmawiać o Twoim dniu, Mika!", "next": "friendly", "trust_delta": 2 },
+        { "label": "Hej, Mika! Pogadajmy o anime.", "next": "anime_topic", "trust_delta": 1 }
+      ]
+
+    },
+    "good": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Dokładnie! MFA pomaga, ale nadal musisz sprawdzać stronę i URL. Bądź czujny.",
+      "choices": [
+        { "label": "Rozumiem, dzięki Mika!", "next": "end_positive", "trust_delta": 1 }
+      ]
+    },
+    "bad": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_annoyed.png",
+      "text": "Nie. Zwolnij, sprawdź domenę i nie wpisuj kodów na podejrzanych stronach.",
+      "choices": [
+        { "label": "Dobrze, będę ostrożniejszy.", "next": "end_negative", "trust_delta": -1 }
+      ]
+    },
+    "friendly": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Haha, zabawny jesteś! Ale serio, zawsze sprawdzaj URL przed wpisaniem poufnych danych.",
+      "choices": [
+        { "label": "Dzięki za wskazówkę, Mika!", "next": "good2", "trust_delta": 1 },
+        { "label": "Będę bardziej ostrożny następnym razem.", "next": "bad2", "trust_delta": -1 }
+      ]
+    },
+    "good2": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Nie ma sprawy! Dbaj o swoje bezpieczeństwo."
+    },
+    "bad2": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_annoyed.png",
+      "text": "Dobrze, pamiętaj tylko, żeby być ostrożnym. Bezpieczeństwo to poważna sprawa."
+    },
+    "anime_topic": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Ooo! Anime, mój ulubiony temat! Oglądałeś ostatnio coś ciekawego?",
+      "choices": [
+        { "label": "Tak! Bardzo spodobały mi się ostatnie odcinki 'Łańcuchy Przeznaczenia'.", "next": "anime_discuss_good", "trust_delta": 2 },
+        { "label": "Nie za bardzo, dopiero zaczynam przygodę z anime.", "next": "anime_discuss_newbie", "trust_delta": 1 }
+      ]
+    },
+    "anime_discuss_good": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Haha, świetnie! Ta część była epicka, prawda? Animacja była niesamowita.",
+      "choices": [
+        { "label": "Dokładnie, sceny walki były niesamowite!", "next": "anime_end_positive", "trust_delta": 2 },
+        { "label": "Podobało mi się, ale niektóre części były mylące.", "next": "anime_end_neutral", "trust_delta": 1 }
+      ]
+    },
+    "anime_discuss_newbie": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_neutral.png",
+      "text": "Nie martw się! Mogę polecić kilka klasyków, od których warto zacząć. Chcesz?",
+      "choices": [
+        { "label": "Tak, proszę!", "next": "anime_recommend", "trust_delta": 2 },
+        { "label": "Może później.", "next": "anime_end_neutral", "trust_delta": 1 }
+      ]
+    },
+    "anime_recommend": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Spróbuj obejrzeć 'Przygody Bohatera' i 'Legenda Sakury'. Świetna fabuła!",
+      "choices": [
+        { "label": "Dzięki, Mika! Sprawdzę je.", "next": "anime_end_positive", "trust_delta": 2 }
+      ]
+    },
+    "anime_end_positive": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Cieszę się, że podobają Ci się moje propozycje! Musimy pogadać o anime jeszcze raz."
+    },
+    "anime_end_neutral": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_neutral.png",
+      "text": "Dobrze, kiedy tylko zechcesz, możemy porozmawiać więcej o anime."
+    },
+    "end_positive": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_happy.png",
+      "text": "Świetnie! Trzymaj tak dalej z bezpieczeństwem."
+    },
+    "end_negative": {
+      "speaker": "Mika",
+      "portrait": "assets/portraits/mika_annoyed.png",
+      "text": "Pamiętaj, że brak ostrożności może być niebezpieczny. Bądź czujny."
+    }
+  }
+}
+

@@ -1,0 +1,19 @@
+{
+  "id": "phishing_set_1",
+  "title": "Phishing Check: Urgent Invoice",
+  "category": "phishing",
+  "questions": [
+    {
+      "prompt": "You receive an email titled 'URGENT: Invoice overdue'. The sender address is billing@paypaI.com (note the capital i). What is the best next step?",
+      "choices": [
+        "Click the link quickly to avoid penalties",
+        "Reply asking for confirmation",
+        "Do not click links; verify via official website/app or known contact method",
+        "Forward it to friends to see what they think"
+      ],
+      "correct_index": 2,
+      "explanation": "Treat it as suspicious: verify independently using official channels.",
+      "points": 150
+    }
+  ]
+}

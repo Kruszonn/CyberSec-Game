@@ -1,0 +1,26 @@
+{
+  "npc_id": "aya",
+  "start_node": "intro",
+  "nodes": {
+    "intro": {
+      "speaker": "Aya",
+      "portrait": "assets/portraits/aya_neutral.png",
+      "text": "Hey! Want to help me check this email for phishing?",
+      "choices": [
+        { "label": "Sure — let's analyze it.", "next": "accept", "trust_delta": 1 },
+        { "label": "Not right now.", "next": "decline", "trust_delta": -1 }
+      ]
+    },
+    "accept": {
+      "speaker": "Aya",
+      "portrait": "assets/portraits/aya_happy.png",
+      "text": "Nice! First question: what looks suspicious?",
+      "action": { "type": "start_challenge", "challenge_set": "phishing_set_1" }
+    },
+    "decline": {
+      "speaker": "Aya",
+      "portrait": "assets/portraits/aya_sad.png",
+      "text": "Oh... okay. Come back if you change your mind."
+    }
+  }
+}

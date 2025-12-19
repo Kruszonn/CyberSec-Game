@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyd
+
+# Virtualenv
+.venv/
+
+# Local saves (generated at runtime)
+data/saves/*.json

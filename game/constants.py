@@ -1,0 +1,29 @@
+SCREEN_W = 1280
+SCREEN_H = 720
+FPS = 60
+
+TILE_SIZE = 16
+
+# Player
+PLAYER_W = 14
+PLAYER_H = 14
+PLAYER_SPEED = 500.0  # pixels/sec
+
+# UI
+UI_FONT_SIZE = 18
+UI_TEXTBOX_H = 210
+
+# Dialogue portrait box
+PORTRAIT_BOX_W = 340
+PORTRAIT_BOX_H = 380
+PORTRAIT_BOX_PAD = 10
+
+# Colors (R, G, B)
+BLACK = (0, 0, 0)
+WHITE = (255, 255, 255)
+GRAY = (40, 40, 40)
+LIGHT_GRAY = (80, 80, 80)
+BLUE = (60, 140, 255)
+YELLOW = (255, 230, 120)
+RED = (220, 70, 70)
+GREEN = (70, 200, 120)

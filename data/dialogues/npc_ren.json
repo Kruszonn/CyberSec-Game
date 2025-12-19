@@ -1,0 +1,72 @@
+{
+  "npc_id": "ren",
+  "start_node": "intro",
+  "nodes": {
+    "intro": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_neutral.png",
+      "text": "Witaj! Chcesz szybki tip dotyczący tworzenia bezpiecznych haseł?",
+      "choices": [
+        { "label": "Tak, naucz mnie.", "next": "tip", "trust_delta": 1 },
+        { "label": "Nie, dzięki.", "next": "bye", "trust_delta": 0 },
+        { "label": "Najpierw opowiedz mi coś o bezpieczeństwie w ogóle.", "next": "security_discuss", "trust_delta": 2 }
+      ]
+    },
+    "tip": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_happy.png",
+      "text": "Używaj długich fraz hasłowych – cztery lub więcej losowych słów. Skorzystaj z menedżera haseł. Długość bije na głowę złożoność pojedynczych znaków. Chcesz, żebym pokazał przykład?"
+    },
+    "tip_example": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_happy.png",
+      "text": "Przykład: 'KawaMyszRzekaLampa'. Proste do zapamiętania, trudne do złamania. Chcesz spróbować stworzyć własne teraz?",
+      "choices": [
+        { "label": "Tak, pokażę Ci moje.", "next": "user_pass_test", "trust_delta": 2 },
+        { "label": "Nie, to wystarczy.", "next": "bye", "trust_delta": 0 }
+      ]
+    },
+    "user_pass_test": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_happy.png",
+      "text": "Świetnie! Sprawdźmy je razem. Jeśli masz frazę hasłową składającą się z kilku słów, będzie bezpieczna. Zaufanie rośnie, jeśli praktykujesz to regularnie."
+    },
+    "security_discuss": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_neutral.png",
+      "text": "Cyberbezpieczeństwo to więcej niż hasła. Ważne jest sprawdzanie linków, korzystanie z 2FA, regularne aktualizacje systemu. Chcesz, żebym opowiedział o najczęstszych pułapkach?",
+      "choices": [
+        { "label": "Tak, chcę poznać pułapki.", "next": "common_traps", "trust_delta": 2 },
+        { "label": "Nie teraz, wystarczy mi tip o hasłach.", "next": "tip_example", "trust_delta": 1 }
+      ]
+    },
+    "common_traps": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_bye.png",
+      "text": "Najczęstsze pułapki to phishing, fałszywe strony bankowe, oraz używanie tego samego hasła w wielu miejscach. Nigdy nie wchodź w linki z nieznanych wiadomości, zawsze sprawdzaj URL. Chcesz dowiedzieć się, jak łatwo rozpoznać phishing?",
+      "choices": [
+        { "label": "Tak, pokaż mi przykłady.", "next": "phishing_examples", "trust_delta": 2 },
+        { "label": "Nie, to wystarczy na teraz.", "next": "bye", "trust_delta": 1 }
+      ]
+    },
+    "phishing_examples": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_happy.png",
+      "text": "Na przykład, strona, która prosi o pełne hasło + SMS, ale jej adres nie zgadza się z oficjalnym. Albo nagle email od 'banku', który nie używa Twojego imienia. Widząc takie sygnały, zatrzymaj się i sprawdź dokładnie. Chcesz, żebym dał Ci prostą checklistę do codziennej ochrony?",
+      "choices": [
+        { "label": "Tak, proszę!", "next": "security_checklist", "trust_delta": 2 },
+        { "label": "Nie, dziękuję.", "next": "bye", "trust_delta": 0 }
+      ]
+    },
+    "security_checklist": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_neutral.png",
+      "text": "Oto lista: 1) Sprawdź URL, 2) Nie klikaj linków z podejrzanych wiadomości, 3) Włącz 2FA, 4) Aktualizuj system, 5) Używaj menedżera haseł. Stosując ją regularnie, Twoje bezpieczeństwo znacznie wzrośnie!"
+    },
+    "bye": {
+      "speaker": "Ren",
+      "portrait": "assets/portraits/ren_neutral.png",
+      "text": "W porządku. Wracaj do treningu i pamiętaj o bezpieczeństwie!"
+    }
+  }
+}
